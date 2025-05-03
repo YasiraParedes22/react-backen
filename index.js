@@ -20,7 +20,7 @@ app.use('/api/productos', productRoutes);
 app.use('/api/ventas', VentasRoutes);
 app.use('/api/clientes', ClientesRoutes);
 
-// Conexión a MongoDB y arranque del servidor
+// Conexión a MongoDB y arranque del servidr
 mongoose
     .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
